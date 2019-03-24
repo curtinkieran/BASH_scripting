@@ -4,7 +4,7 @@ Below is a short description of how to set up and use the DBMS.
 
 1) Open 2 terminals and execute ./server.sh and ./client.sh $id.  This will start the server and a named client, as well as setting up server and client$id pipes.
 
-2) The system alows clients to create databases and tables, and also insert and select data from the tables.  Text is entered into the client staandard input.  Examples are given below:
+2) The system alows clients to create databases and tables, and also insert and select data from the tables.  Text is entered into the client standard input.  Examples are given below:
 
 create_database DB 			(creates a database called DB)
 
@@ -20,11 +20,10 @@ select DB Table 1,3 1 a			(selects the 1st and 3rd column from the Table where c
 
 shutdown				(shutsdown the server)
 
-exit					(exit's the client)
+exit					(exits the client)
 
 It is not permitted to create a database that already exists.
-You can not create a table in a Database that does not exist.
-You can not insert data into a Table in a Database if the Table or Database do not exist.
-Select may not return any results depending on your search criteria.
+You can not CREATE a table in a Database that does not exist.
+You can not INSERT data into a Table in a Database if the Table or Database do not exist.
+SELECT may not return any results depending on your search criteria.
 
-I hope you enjoy using this DBMS as much as I have enjoyed creating it :).
